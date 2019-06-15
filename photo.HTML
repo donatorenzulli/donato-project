@@ -1,0 +1,245 @@
+<html>
+
+<head>
+
+<title>Donato Renzulli | photo </title>
+<link rel="icon" href="images/logo.png" type="png">
+<link rel="stylesheet" type="text/css" href="tema2.css">
+
+</head>
+
+
+<body>
+
+   <BODY BACKGROUND="images/tetto.jpg" background-size: cover>
+   <body leftmargin="0" topmargin="0">
+
+<center>
+<br>
+
+   <a href="home.html" > <img src="images/logo.png"  class="logoing" width="50px" height="50px"> </a>
+
+   </center>
+   <br>
+
+
+   <div class="separatore">
+    <p1> atrido - a project with Marina De Iulis </p1>
+     </div>
+     <br>
+
+
+<center>
+<div class="sfondotra">
+
+   <table>
+     <font-color:#ffffff>
+       <TABLE CELLPADDING=40px>
+         <tr>
+     <td> <img src="images/giacca (2).jpg" width="400" </td>
+     <td> <img src="images/giacca (1).jpg" width="400" ></td>
+     <td> <img src="images/giacca (3).jpg" width="400" ></td>
+   </tr>
+   </table>
+   <br>
+   </div>
+ <br>
+
+</center>
+
+   <div class="separatore">
+  <p1>   N 56°8’1.985” E 9°3’10.333” - a project with Debora De Blasi </p1>
+     </div>
+
+     <br>
+
+        <center>
+        <table cellspacing ="10px">
+          <tr>
+            <td><img class="btn" id="prev1"></td>
+            <td> <img src="images/pic5.jpg" class="miniatura" id="pic5"> </td>
+            <td> <img src="images/pic6.jpg" class="miniatura" id="pic6"> </td>
+            <td> <img src="images/pic5.jpg" class="large " id="pic_large1" > </td>
+            <td> <img src="images/pic7.jpg" class="miniatura" id="pic7"> </td>
+            <td> <img src="images/pic8.jpg" class="miniatura" id="pic8"> </td>
+            <td> <img class="btn" id="next1"></td>
+          </tr>
+        </table>
+        </center>
+    <br>
+    <br>
+
+    <script>
+    let prev1 = document.getElementById("prev1");
+    let next1 = document.getElementById("next1");
+    let contatore1 = 5;
+
+    let pic5 = document.getElementById("pic5");
+    let pic6 = document.getElementById("pic6");
+    let pic7 = document.getElementById("pic7");
+    let pic8 = document.getElementById("pic8");
+
+    let pic_large1 = document.getElementById("pic_large1");
+
+    function carica_pic5() {
+    pic_large1.setAttribute('src', "images/pic5.jpg");
+    }
+
+    function carica_pic6() {
+    pic_large1.setAttribute('src', "images/pic6.jpg");
+    }
+
+    function carica_pic7() {
+    pic_large1.setAttribute('src', "images/pic7.jpg");
+    }
+
+    function carica_pic8() {
+    pic_large1.setAttribute('src', "images/pic8.jpg");
+    }
+
+    pic5.addEventListener('click', carica_pic5);
+    pic6.addEventListener('click', carica_pic6);
+    pic7.addEventListener('click', carica_pic7);
+    pic8.addEventListener('click', carica_pic8);
+
+
+    function carica_prev1() {
+    contatore1 = contatore1 - 1;
+    if (contatore1 < 5) {
+      contatore1 = 8;
+    }
+    let immagine = "images/pic" + contatore1 + ".jpg";
+    pic_large1.setAttribute('src', immagine);
+    }
+
+    function carica_next1() {
+    contatore1 = contatore1 + 1;
+    if (contatore1 > 8) {
+      contatore1 = 5;
+    }
+    let immagine = "images/pic" + contatore1 + ".jpg";
+    pic_large1.setAttribute('src', immagine);
+    }
+    prev1.addEventListener('click', carica_prev1);
+    next1.addEventListener('click', carica_next1);
+
+    </script>
+
+<center>
+
+ <div class="separatore">
+   <p1> calm, you don't need to run <p1>
+   </div>
+   <br>
+
+<div class="sfondotra">
+
+   <table>
+     <font-color:#ffffff>
+     <table cellspacing: 0px>
+      <table CELLPADDING=40px>
+   <tr>
+     <td> <img src="images/ridotta.jpg" width="400" </td>
+     <td> <img src="images/tempo.jpg" width="400" ></td>
+     <td> <img src="images/barca.jpg" width="400" ></td>
+    </tr>
+
+ </table>
+ <br>
+</div>
+ </center>
+ <br>
+
+
+ <div class="separatore">
+   <p1> people, they like museums  <p1>
+   </div>
+
+<br>
+
+   <center>
+   <table cellspacing ="10px">
+     <tr>
+       <td><img class="btn" id="prev"></td>
+       <td> <img src="images/pic1.jpg" class="miniatura" id="pic1"> </td>
+       <td> <img src="images/pic2.jpg" class="miniatura" id="pic2"> </td>
+       <td> <img src="images/pic1.jpg" class="large " id="pic_large" > </td>
+       <td> <img src="images/pic3.jpg" class="miniatura" id="pic3"> </td>
+       <td> <img src="images/pic4.jpg" class="miniatura" id="pic4"> </td>
+       <td> <img class="btn" id="next"></td>
+     </tr>
+   </table>
+   </center>
+
+   <script>
+   let prev = document.getElementById("prev");
+   let next = document.getElementById("next");
+   let contatore = 1;
+
+   let pic1 = document.getElementById("pic1");
+   let pic2 = document.getElementById("pic2");
+   let pic3 = document.getElementById("pic3");
+   let pic4 = document.getElementById("pic4");
+
+   let pic_large = document.getElementById("pic_large");
+
+   function carica_pic1() {
+     pic_large.setAttribute('src', "images/pic1.jpg");
+   }
+
+   function carica_pic2() {
+     pic_large.setAttribute('src', "images/pic2.jpg");
+   }
+
+   function carica_pic3() {
+     pic_large.setAttribute('src', "images/pic3.jpg");
+   }
+
+   function carica_pic4() {
+     pic_large.setAttribute('src', "images/pic4.jpg");
+   }
+
+
+   pic1.addEventListener('click', carica_pic1);
+   pic2.addEventListener('click', carica_pic2);
+   pic3.addEventListener('click', carica_pic3);
+   pic4.addEventListener('click', carica_pic4);
+
+
+   function carica_prev() {
+     contatore = contatore - 1;
+     if (contatore < 1) {
+       contatore = 4;
+     }
+     let immagine = "images/pic" + contatore + ".jpg";
+     pic_large.setAttribute('src', immagine);
+   }
+
+   function carica_next() {
+     contatore = contatore + 1;
+     if (contatore > 4) {
+       contatore = 1;
+     }
+     let immagine = "images/pic" + contatore + ".jpg";
+     pic_large.setAttribute('src', immagine);
+   }
+   prev.addEventListener('click', carica_prev);
+   next.addEventListener('click', carica_next);
+   </script>
+
+<br>
+
+<div class="contatti">
+    <link rel="stylesheet" type="text/css" href="theme0.css">
+    <br>
+<center>
+  <a href="https://www.instagram.com/donato_fwn/"  target="blank" > <img src="images/logoignero.png" width="40px" height="40px"> </a>
+
+<p>
+  <a href="mailto:donren.99@gmail.com" class="bianco">donren.99@gmail.com </a>
+</p>
+</center>
+<br>
+</div>
+
+</body>
